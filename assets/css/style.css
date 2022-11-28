@@ -243,8 +243,6 @@ img {
   gap: 20px;
 }
 
-.multisteps_form {}
-
 .questions {
   background: #ffffff0d;
   border-radius: 10px;
@@ -262,158 +260,119 @@ img {
 .step_progress {
   display: flex;
   gap: 15px;
-  margin-bottom: 50px;
+  margin-bottom: 35px;
   justify-content: center;
 }
 
+.com-name {
+  border-top: 1px solid #dddddd21;
+  padding-top: 15px;
+  color: #fff;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  width: max-content;
+  margin: 0 auto;
+  margin-top: 30px;
+}
 
-@media (min-width: 1500px) {
-  .container {
-    max-width: 1510px;
-  }
+.com-name p {
+  margin: 0;
+}
+
+ul.social-header {
+  position: fixed;
+  top: 0;
+  left: 15px;
+  z-index: 6;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center
+}
+
+ul.social-header li {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+ul.social-header li a {
+  display: inline-block;
+  background-color: #fff;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  outline: auto #ddd;
+}
+
+.call-whatsapp {
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  z-index: 6;
+  padding: 0;
+  list-style: none;
+}
+
+.call-whatsapp li {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.call-whatsapp li a {
+  display: inline-block;
+  width: 43px;
+  height: 43px;
+  line-height: 36px;
+  text-align: center;
+  position: relative;
+  border-radius: 50%;
+}
+
+.header {text-align: center;}
+
+.header img{
+  height: 100px;
+  border-radius: 50%;
+  width: 100px;
+  margin-bottom: 13px;
+}
+
+.header h3{
+  color: #fff;
+  margin-bottom: 30px;
+  font-weight: normal;
 }
 
 /* ================================================== */
-@media screen and (max-width: 1499.98px) {
-  .step_progress .step {
-    width: 12rem;
-  }
-
-  .step_progress .step:not(:last-child) {
-    margin-right: 2.8rem;
-  }
+@media (max-width: 1499.98px) {
+  
 }
 
-@media screen and (max-width: 1399.98px) {
-  .step_progress .step {
-    width: 12rem;
-  }
-
-  .step_progress .step:not(:last-child) {
-    margin-right: 2.8rem;
-  }
-
-  span {
-    font-size: 1.2rem;
-    padding-bottom: 0.8rem;
-  }
-
-  h1 {
-    font-size: 4rem;
-  }
-
-  .form_items li {
-    font-size: 1.2rem;
-    padding: 0.8375rem 3rem;
-  }
-
-  .f_btn {
-    font-size: 1.18rem;
-    font-weight: 700;
-    padding: 0.7375rem 1.3625rem;
-  }
+@media (max-width: 1399.98px) {
+  
 }
 
-@media screen and (max-width: 1199.98px) {
-  .step_progress .step {
-    width: 10rem;
-  }
-
-  .step_progress .step:not(:last-child) {
-    margin-right: 2.6rem;
-  }
-
-  span {
-    font-size: 1.15rem;
-    padding-bottom: 0.6rem;
-  }
-
-  h1 {
-    font-size: 3.5rem;
-  }
-
-  .form_items li {
-    font-size: 1rem;
-    padding: 0.7375rem 3rem;
-  }
-
-  .f_btn {
-    font-size: 1.15rem;
-    font-weight: 700;
-    padding: 0.8375rem 1.4625rem;
-  }
+@media (max-width: 1199.98px) {
+  
 }
 
-@media screen and (max-width: 991px) {
-  .step_progress .step {
-    width: 6.5rem;
-  }
-
-  .step_progress .step:not(:last-child) {
-    margin-right: 2rem;
-  }
-
-  span {
-    font-size: 1rem;
-  }
-
-  h1 {
-    font-size: 3.5rem;
-    font-weight: 600;
-  }
-
-  .form_items li {
-    font-size: 1rem;
-  }
-
-  .f_btn {
-    font-size: 1rem;
-    font-weight: 600;
-    padding: 0.7375rem 1.3625rem;
-  }
+@media (max-width: 991px) {
+  
 }
 
-@media screen and (max-width: 767px) {
-  .step_progress .step {
-    width: 5rem;
-  }
-
-  .step_progress .step:not(:last-child) {
-    margin-right: 1.5rem;
-  }
-
-  span {
-    font-size: 0.8rem;
-  }
-
-  h1 {
-    font-size: 2.5rem;
-    font-weight: 500;
-  }
-
-  .form_items li {
-    font-size: 0.8rem;
-  }
-
-  .f_btn {
-    font-size: 0.8rem;
-    font-weight: 500;
-    padding: 0.5375rem 1.1625rem;
-  }
+@media (max-width: 767px) {
+  
 }
 
-@media screen and (max-width: 575px) {
-  span {
-    font-size: 0.8rem;
-  }
-
-  h1 {
-    font-size: 2rem;
-    font-weight: 500;
-  }
-
-  .f_btn {
-    font-size: 0.6rem;
-    padding: 0.5375rem 1.1625rem;
-  }
+@media (max-width: 575px) {
+ 
 }
