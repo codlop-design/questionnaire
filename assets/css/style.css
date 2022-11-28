@@ -19,6 +19,7 @@
 .step {
   width: 20px;
   height: 20px;
+  padding: 0;
 }
 
 .step.active {
@@ -53,6 +54,7 @@
   padding: 5px 30px;
   border-radius: 50px;
   margin-bottom: 25px;
+  text-transform: capitalize;
 }
 
 .question_number em {
@@ -61,7 +63,7 @@
 }
 
 span {
-  color: #00bcd4;
+  color: #5868b1;
   font-size: 1.25rem;
   padding-bottom: 1rem;
   -webkit-transition: 0.8s cubic-bezier(0.25, 1, 0.5, 1);
@@ -224,6 +226,15 @@ img {
   color: #cbcbcb;
 }
 
+.rating li label span em {
+  font-style: normal;
+  white-space: nowrap;
+}
+
+.rating li label span b {
+  font-weight: normal;
+}
+
 .rating li input[type=radio]:checked+label>span {
   color: #fff;
 }
@@ -337,16 +348,19 @@ ul.social-header li a {
   border-radius: 50%;
 }
 
-.header {text-align: center;}
+.header {
+  text-align: center;
+}
 
-.header img{
+.header img {
   height: 100px;
   border-radius: 50%;
   width: 100px;
   margin-bottom: 13px;
+  box-shadow: rgb(255 255 255 / 22%) 0px 0px 0px 4px;
 }
 
-.header h3{
+.header h3 {
   color: #fff;
   margin-bottom: 5px;
   font-weight: normal;
@@ -358,26 +372,328 @@ ul.social-header li a {
 }
 
 /* ================================================== */
-@media (max-width: 1499.98px) {
-  
-}
-
-@media (max-width: 1399.98px) {
-  
-}
-
 @media (max-width: 1199.98px) {
-  
+  .header h3 {
+    font-size: 25px;
+  }
+
+  .header p {
+    margin-bottom: 15px;
+  }
+
+  .step_progress {
+    gap: 10px;
+  }
+
+  .step {
+    width: 16px;
+    height: 16px;
+  }
+
+  .question_number {
+    font-size: 19px;
+    margin-top: -43px;
+    padding: 4px 30px;
+    margin-bottom: 15px;
+  }
+
+  ul.social-header li a,
+  .call-whatsapp li a {
+    width: 35px;
+    height: 35px;
+    line-height: 34px;
+  }
+
+  .question_title {
+    font-size: 19px;
+    margin-bottom: 15px;
+  }
+
+  .questions {
+    padding: 10px;
+    width: 810px;
+    border: 4px solid #ffffff0a;
+  }
+
+  .rating li input[type=radio]+label>img {
+    width: 32px;
+    height: 32px;
+  }
+
+  .multisteps_form_panel {
+    border-radius: 15px;
+    padding: 20px 10px 10px;
+    border: 4px solid #5868b1;
+  }
+
+  .f_btn {
+    font-size: 19px;
+    padding: 4px 25px;
+  }
+
+  .form_btn {
+    margin-top: 25px;
+    gap: 15px;
+  }
 }
 
 @media (max-width: 991px) {
-  
+  .container {
+    max-width: 100%;
+  }
+
+  .header img {
+    height: 85px;
+    width: 85px;
+    margin-bottom: 10px;
+  }
+
+  .wrapper {
+    padding: 15px;
+  }
+
+  .header h3 {
+    font-size: 21px;
+  }
+
+  .header p {
+    margin-bottom: 10px;
+  }
+
+  .rating {
+    gap: 10px;
+  }
+
+  .questions {
+    width: auto;
+    border: 3px solid #ffffff0a;
+    margin-bottom: 10px;
+  }
+
+  .multisteps_form_panel {
+    width: 100%;
+  }
+
+  ul.social-header li a {
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+  }
+
+  .question_title {
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+
+  .f_btn {
+    font-size: 18px;
+    padding: 3px 25px;
+  }
+
+  .form_btn {
+    margin-top: 20px;
+  }
+  .rating li label span {
+    text-align: center;
+    line-height: 20px;
+  }
+  .rating li label span b {
+    display: none;
+  }
+  .rating li label span em {
+    display: block;
+  }
+  .rating li {
+    width: 100%;
+  }
 }
 
 @media (max-width: 767px) {
-  
+  .header h3 {
+    font-size: 19px;
+    margin-bottom: 3px;
+}
+.header p {
+  margin-bottom: 7px;
+  font-size: 15px;
+}
+.step {
+  width: 13px;
+  height: 13px;
+}
+.question_number {
+  font-size: 18px;
+  margin-top: -39px;
+  padding: 2px 30px;
+}
+.step_progress {
+  gap: 7px;
+  margin-bottom: 30px;
+}
+.question_title {
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+.multisteps_form_panel {
+  border: 3px solid #5868b1;
+  width: 100%;
+}
+.questions {
+  width: auto;
+  border: 3px solid #ffffff0a;
+}
+.header img {
+  height: 75px;
+  width: 75px;
+  box-shadow: rgb(255 255 255 / 22%) 0px 0px 0px 3px;
+}
+ul.social-header {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  justify-content: flex-start;
+}
+ul.social-header li a {
+  width: 26px;
+  height: 26px;
+  line-height: 26px;
+  outline: unset;
+  box-shadow: 0 0 0 2px #fff;
+}
+ul.social-header li {
+  gap: 11px;
+}
+.call-whatsapp li {
+  gap: 10px;
+}
+.call-whatsapp li a {
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+}
 }
 
 @media (max-width: 575px) {
- 
+  .call-whatsapp {
+    position: relative;
+    top: 0;
+    right: 0;
+    margin: 0;
+  }
+
+  .call-whatsapp li {
+    flex-direction: row;
+    gap: 11px;
+}
+
+  ul.social-header {
+    position: relative;
+    top: 0;
+    left: 0;
+    justify-content: end;
+    align-items: center;
+    flex-direction: row;
+    margin: 0;
+    width: max-content;
+}
+
+ul.social-header li {
+  flex-direction: row;
+}
+.flex-sm {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+}
+.rating li label span {
+  font-size: 14px;
+  line-height: 18px;
+}
+.rating li input[type=radio]+label>img {
+  width: 28px;
+  height: 28px;
+}
+.question_number {
+  font-size: 17px;
+  padding: 2px 20px;
+  margin-top: -38px;
+}
+.header h3 {
+  font-size: 18px;
+}
+.question_title {
+  font-size: 16px;
+  line-height: 24px;
+}
+.f_btn {
+  font-size: 17px;
+  padding: 2px 20px;
+}
+.form_btn {
+  margin-top: 15px;
+}
+.wrapper {
+  padding: 15px 0 10px;
+}
+}
+
+@media (max-width: 450px) {
+  .header h3 {
+    font-size: 16px;
+}
+.header p {
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+.question_number {
+  font-size: 16px;
+  padding: 1px 20px;
+  margin-top: -36px;
+}.step_progress {
+  gap: 6px;
+  margin-bottom: 25px;
+}
+.rating {
+  gap: 2px;
+  flex-direction: column;
+}
+.rating li label span b {
+  display: inline-block;
+}
+.rating li label span em {
+  display: inline-block;
+}
+.rating li label span {
+  display: flex;
+  gap: 5px;
+}
+.rating li label {
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 7px;
+  padding-bottom: 5px;
+}
+.call-whatsapp li a {
+  width: 28px;
+  height: 28px;
+  line-height: 28px;
+}
+ul.social-header li a {
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+}
+.f_btn {
+  font-size: 16px;
+  padding: 2px 15px;
+}
+.header img {
+  height: 61px;
+  width: 61px;
+}
+.question_title {
+  text-align: right;
+}
 }
