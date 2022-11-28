@@ -37,7 +37,7 @@ function showTab(n) {
     document.getElementById("nextBtn").innerHTML = "ارسال";
     
   } else  {
-    document.getElementById("nextBtn").innerHTML = "السؤال التالي";
+    document.getElementById("nextBtn").innerHTML = "التالي";
   }
 
   
