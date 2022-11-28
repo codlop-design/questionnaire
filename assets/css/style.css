@@ -239,7 +239,7 @@ img {
 .form_btn {
   display: flex;
   justify-content: center;
-  margin-top: 50px;
+  margin-top: 30px;
   gap: 20px;
 }
 
@@ -348,8 +348,13 @@ ul.social-header li a {
 
 .header h3{
   color: #fff;
-  margin-bottom: 30px;
+  margin-bottom: 5px;
   font-weight: normal;
+}
+
+.header p {
+  color: #fff;
+  margin-bottom: 25px;
 }
 
 /* ================================================== */
