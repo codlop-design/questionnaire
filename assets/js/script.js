@@ -19,6 +19,7 @@
   
 // });
 
+
 var currentTab = 0; // Current tab is set to be the first tab (0)
 showTab(currentTab); // Display the current tab
 
@@ -35,9 +36,11 @@ function showTab(n) {
  
    if (n == (x.length - 1)) {
     document.getElementById("nextBtn").innerHTML = "ارسال";
+    $('html, body').animate({scrollTop:0}, 100);
     
   } else  {
     document.getElementById("nextBtn").innerHTML = "التالي";
+    $('html, body').animate({scrollTop:0}, 100);
   }
 
   
