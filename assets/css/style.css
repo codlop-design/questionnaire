@@ -371,6 +371,38 @@ ul.social-header li a {
   margin-bottom: 25px;
 }
 
+.check_mark_img img {
+  width: 270px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.sub_title span {
+  color: #f3f3f3;
+  font-size: 1.25rem;
+}
+
+.title h3 {
+  color: #ffffff;
+  font-size: 32px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.title h1 {
+  width: 50%;
+  height: auto;
+  top: 180px;
+  left: 380px;
+  font-size: 4.375rem;
+  font-weight: 700;
+}
+
+.wrapper-flex {
+  align-items: center;
+  display: flex;
+}
+
 /* ================================================== */
 @media (max-width: 1199.98px) {
   .header h3 {
@@ -493,84 +525,135 @@ ul.social-header li a {
   .form_btn {
     margin-top: 20px;
   }
+
   .rating li label span {
     text-align: center;
     line-height: 20px;
   }
+
   .rating li label span b {
     display: none;
   }
+
   .rating li label span em {
     display: block;
   }
+
   .rating li {
     width: 100%;
   }
+
+  .check_mark_img img {
+    width: 150px;
+  }
+
+  .title h3 {
+    font-size: 25px;
+  }
+
+  .com-name {
+    margin-top: 20px;
+  }
+
 }
 
 @media (max-width: 767px) {
   .header h3 {
     font-size: 19px;
     margin-bottom: 3px;
-}
-.header p {
-  margin-bottom: 7px;
-  font-size: 15px;
-}
-.step {
-  width: 13px;
-  height: 13px;
-}
-.question_number {
-  font-size: 18px;
-  margin-top: -39px;
-  padding: 2px 30px;
-}
-.step_progress {
-  gap: 7px;
-  margin-bottom: 30px;
-}
-.question_title {
-  font-size: 17px;
-  margin-bottom: 10px;
-}
-.multisteps_form_panel {
-  border: 3px solid #5868b1;
-  width: 100%;
-}
-.questions {
-  width: auto;
-  border: 3px solid #ffffff0a;
-}
-.header img {
-  height: 75px;
-  width: 75px;
-  box-shadow: rgb(255 255 255 / 22%) 0px 0px 0px 3px;
-}
-ul.social-header {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  justify-content: flex-start;
-}
-ul.social-header li a {
-  width: 26px;
-  height: 26px;
-  line-height: 26px;
-  outline: unset;
-  box-shadow: 0 0 0 2px #fff;
-}
-ul.social-header li {
-  gap: 11px;
-}
-.call-whatsapp li {
-  gap: 10px;
-}
-.call-whatsapp li a {
-  width: 32px;
-  height: 32px;
-  line-height: 32px;
-}
+  }
+
+  .header p {
+    margin-bottom: 7px;
+    font-size: 15px;
+  }
+
+  .step {
+    width: 13px;
+    height: 13px;
+  }
+
+  .question_number {
+    font-size: 18px;
+    margin-top: -39px;
+    padding: 2px 30px;
+  }
+
+  .step_progress {
+    gap: 7px;
+    margin-bottom: 30px;
+  }
+
+  .question_title {
+    font-size: 17px;
+    margin-bottom: 10px;
+  }
+
+  .multisteps_form_panel {
+    border: 3px solid #5868b1;
+    width: 100%;
+  }
+
+  .questions {
+    width: auto;
+    border: 3px solid #ffffff0a;
+  }
+
+  .header img {
+    height: 75px;
+    width: 75px;
+    box-shadow: rgb(255 255 255 / 22%) 0px 0px 0px 3px;
+  }
+
+  ul.social-header {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    justify-content: flex-start;
+  }
+
+  ul.social-header li a {
+    width: 26px;
+    height: 26px;
+    line-height: 26px;
+    outline: unset;
+    box-shadow: 0 0 0 2px #fff;
+  }
+
+  ul.social-header li {
+    gap: 11px;
+  }
+
+  .call-whatsapp li {
+    gap: 10px;
+  }
+
+  .call-whatsapp li a {
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+  }
+
+  .check_mark_img img {
+    width: 130px;
+    margin-bottom: 10px;
+  }
+
+  .sub_title span {
+    font-size: 18px;
+    margin-bottom: 3px;
+    display: block;
+    padding: 0;
+  }
+
+  .title h3 {
+    font-size: 22px;
+  }
+
+  .com-name {
+    margin-top: 15px;
+    padding-top: 10px;
+  }
 }
 
 @media (max-width: 575px) {
@@ -583,8 +666,8 @@ ul.social-header li {
 
   .call-whatsapp li {
     flex-direction: row;
-    gap: 11px;
-}
+    gap: 10px;
+  }
 
   ul.social-header {
     position: relative;
@@ -595,105 +678,169 @@ ul.social-header li {
     flex-direction: row;
     margin: 0;
     width: max-content;
-}
+  }
 
-ul.social-header li {
-  flex-direction: row;
-}
-.flex-sm {
-  margin-top: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 15px;
-}
-.rating li label span {
-  font-size: 14px;
-  line-height: 18px;
-}
-.rating li input[type=radio]+label>img {
-  width: 28px;
-  height: 28px;
-}
-.question_number {
-  font-size: 17px;
-  padding: 2px 20px;
-  margin-top: -38px;
-}
-.header h3 {
-  font-size: 18px;
-}
-.question_title {
-  font-size: 16px;
-  line-height: 24px;
-}
-.f_btn {
-  font-size: 17px;
-  padding: 2px 20px;
-}
-.form_btn {
-  margin-top: 15px;
-}
-.wrapper {
-  padding: 15px 0 10px;
-}
+  ul.social-header li {
+    flex-direction: row;
+    gap: 12px;
+  }
+
+  .flex-sm {
+    margin-top: 25px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 15px;
+    gap: 10px;
+    flex-direction: row-reverse;
+  }
+
+  .rating li label span {
+    font-size: 15px;
+    line-height: 18px;
+  }
+
+  .rating li input[type=radio]+label>img {
+    width: 28px;
+    height: 28px;
+  }
+
+  .question_number {
+    font-size: 17px;
+    padding: 2px 20px;
+    margin-top: -38px;
+  }
+
+  .header h3 {
+    font-size: 18px;
+  }
+
+  .question_title {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .f_btn {
+    font-size: 17px;
+    padding: 2px 20px;
+  }
+
+  .form_btn {
+    margin-top: 15px;
+  }
+
+  .wrapper {
+    padding: 15px 0 10px;
+  }
+
+  .call-whatsapp li a {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+  }
+
+  .wrapper-flex {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .check_mark_img img {
+    width: 100px;
+  }
+
+  .sub_title span {
+    font-size: 17px;
+  }
+
+  .title h3 {
+    font-size: 19px;
+  }
+
+  .com-name p {
+    font-size: 15px;
+  }
 }
 
 @media (max-width: 450px) {
   .header h3 {
     font-size: 16px;
-}
-.header p {
-  margin-bottom: 5px;
-  font-size: 14px;
-}
-.question_number {
-  font-size: 16px;
-  padding: 1px 20px;
-  margin-top: -36px;
-}.step_progress {
-  gap: 6px;
-  margin-bottom: 25px;
-}
-.rating {
-  gap: 2px;
-  flex-direction: column;
-}
-.rating li label span b {
-  display: inline-block;
-}
-.rating li label span em {
-  display: inline-block;
-}
-.rating li label span {
-  display: flex;
-  gap: 5px;
-}
-.rating li label {
-  flex-direction: row;
-  justify-content: flex-start;
-  gap: 7px;
-  padding-bottom: 5px;
-}
-.call-whatsapp li a {
-  width: 28px;
-  height: 28px;
-  line-height: 28px;
-}
-ul.social-header li a {
-  width: 25px;
-  height: 25px;
-  line-height: 25px;
-}
-.f_btn {
-  font-size: 16px;
-  padding: 2px 15px;
-}
-.header img {
-  height: 61px;
-  width: 61px;
-}
-.question_title {
-  text-align: right;
-}
+    line-height: 24px;
+  }
+
+  .header p {
+    margin-bottom: 5px;
+    font-size: 14px;
+  }
+
+  .question_number {
+    font-size: 16px;
+    padding: 1px 20px;
+    margin-top: -36px;
+  }
+
+  .step_progress {
+    gap: 6px;
+    margin-bottom: 25px;
+  }
+
+  .rating {
+    gap: 2px;
+    flex-direction: column;
+  }
+
+  .rating li label span b {
+    display: inline-block;
+  }
+
+  .rating li label span em {
+    display: inline-block;
+  }
+
+  .rating li label span {
+    display: flex;
+    gap: 5px;
+  }
+
+  .rating li label {
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 7px;
+    padding-bottom: 5px;
+  }
+
+  .call-whatsapp li a {
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+  }
+
+  ul.social-header li a {
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+  }
+
+  .f_btn {
+    font-size: 16px;
+    padding: 2px 15px;
+  }
+
+  .header img {
+    height: 65px;
+    width: 65px;
+  }
+
+  .question_title {
+    text-align: right;
+  }
+
+  .com-name {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .check_mark_img img {
+    width: 85px;
+  }
 }
